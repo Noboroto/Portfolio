@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-900: #1e3a8a;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #0f172a;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-light text-slate-900 dark:bg-surface-dark dark:text-slate-100;
+    @apply transition-colors duration-200;
+    font-family: var(--font-sans);
+  }
+}

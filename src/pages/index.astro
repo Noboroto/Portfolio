@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import FeaturedProjects from '../components/FeaturedProjects.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import { getVisibleRepos, getFeatured, getLanguages, getDomains } from '../lib/categorize';
+
+const visibleRepos = getVisibleRepos();
+const featured = getFeatured();
+const languages = getLanguages();
+const domains = getDomains();
+---
+
+<BaseLayout title="Thanh Tu Vo | Portfolio">
+  <Navbar />
+  <Hero />
+  <About totalRepos={visibleRepos.length} languages={languages} />
+  <FeaturedProjects repos={featured} />
+  <ProjectGrid repos={visibleRepos} domains={domains} languages={languages} />
+  <Skills />
+  <Contact />
+  <Footer />
+</BaseLayout>

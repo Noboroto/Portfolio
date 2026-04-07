@@ -1,0 +1,43 @@
+---
+import profile from '../data/profile.json';
+
+interface Props {
+  totalRepos: number;
+  languages: string[];
+}
+
+const { totalRepos, languages } = Astro.props;
+---
+
+<section id="about" class="py-20">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+          {profile.bio}
+        </p>
+        <div class="flex gap-8 text-sm text-slate-500 dark:text-slate-400">
+          <div>
+            <span class="font-bold text-2xl text-slate-900 dark:text-white">{totalRepos}</span>
+            <br />Projects
+          </div>
+          <div>
+            <span class="font-bold text-2xl text-slate-900 dark:text-white">{languages.length}</span
+            >
+            <br />Languages
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {
+          languages.slice(0, 12).map((lang) => (
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-sm font-medium">
+              {lang}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

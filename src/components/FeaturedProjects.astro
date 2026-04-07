@@ -1,0 +1,22 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import type { RepoData } from '../lib/types';
+
+interface Props {
+  repos: RepoData[];
+}
+
+const { repos } = Astro.props;
+---
+
+<section class="py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4 text-center">Featured Projects</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+      Production-ready applications and significant contributions
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {repos.map((repo) => <ProjectCard repo={repo} featured={true} />)}
+    </div>
+  </div>
+</section>

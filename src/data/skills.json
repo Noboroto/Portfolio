@@ -1,0 +1,115 @@
+{
+	"categories": [
+		{
+			"name": "Languages",
+			"skills": [
+				{
+					"name": "Python",
+					"level": "advanced"
+				},
+				{
+					"name": "TypeScript",
+					"level": "advanced"
+				},
+				{
+					"name": "JavaScript",
+					"level": "advanced"
+				},
+				{
+					"name": "C#",
+					"level": "advanced"
+				},
+				{
+					"name": "C++",
+					"level": "advanced"
+				},
+				{
+					"name": "Java",
+					"level": "beginner"
+				},
+				{
+					"name": "Dart",
+					"level": "beginner"
+				},
+				{
+					"name": "SQL",
+					"level": "intermediate"
+				},
+				{
+					"name": "HTML/CSS",
+					"level": "intermediate"
+				},
+				{
+					"name": "LaTeX",
+					"level": "intermediate"
+				}
+			]
+		},
+		{
+			"name": "Frameworks & Libraries",
+			"skills": [
+				{
+					"name": "React",
+					"level": "intermediate"
+				},
+				{
+					"name": "Next.js",
+					"level": "intermediate"
+				},
+				{
+					"name": "Astro",
+					"level": "beginner"
+				},
+				{
+					"name": ".NET",
+					"level": "intermediate"
+				},
+				{
+					"name": "PyTorch",
+					"level": "intermediate"
+				},
+				{
+					"name": "Numpy & Pandas",
+					"level": "intermediate"
+				},
+				{
+					"name": "Flutter",
+					"level": "beginner"
+				},
+				{
+					"name": "Tailwind CSS",
+					"level": "intermediate"
+				}
+			]
+		},
+		{
+			"name": "Tools & Platforms",
+			"skills": [
+				{
+					"name": "Git/GitHub",
+					"level": "advanced"
+				},
+				{
+					"name": "Docker",
+					"level": "advanced"
+				},
+				{
+					"name": "Vercel",
+					"level": "intermediate"
+				},
+				{
+					"name": "PostgreSQL",
+					"level": "intermediate"
+				},
+				{
+					"name": "Linux",
+					"level": "intermediate"
+				},
+				{
+					"name": "VS Code",
+					"level": "advanced"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,150 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import FilterBar from './FilterBar.astro';
+import type { RepoData } from '../lib/types';
+
+interface Props {
+  repos: RepoData[];
+  domains: string[];
+  languages: string[];
+}
+
+const { repos, domains, languages } = Astro.props;
+
+const mainRepos = repos.filter((r) => r.tier !== 'learning');
+const learningRepos = repos.filter((r) => r.tier === 'learning');
+---
+
+<section id="projects" class="py-20 bg-slate-50 dark:bg-slate-800/50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4 text-center">All Projects</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-center mb-8">
+      {repos.length} repositories across {languages.length} languages
+    </p>
+
+    <FilterBar domains={domains} languages={languages} />
+
+    <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {mainRepos.map((repo) => <ProjectCard repo={repo} />)}
+    </div>
+
+    <div
+      id="learning-grid"
+      class="hidden mt-6 pt-6 border-t border-slate-200 dark:border-slate-700"
+    >
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {learningRepos.map((repo) => <ProjectCard repo={repo} />)}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const searchInput = document.getElementById('project-search') as HTMLInputElement;
+  const sortSelect = document.getElementById('project-sort') as HTMLSelectElement;
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const clearBtn = document.getElementById('clear-filters');
+  const showLearning = document.getElementById('show-learning') as HTMLInputElement;
+  const learningGrid = document.getElementById('learning-grid');
+  const projectGrid = document.getElementById('project-grid');
+  const resultCount = document.getElementById('result-count');
+  const activeFiltersDiv = document.getElementById('active-filters');
+
+  const activeFilters: Map<string, Set<string>> = new Map();
+
+  function getCards(): HTMLElement[] {
+    const grids = showLearning?.checked ? [projectGrid, learningGrid] : [projectGrid];
+    return grids.flatMap((g) => Array.from(g?.querySelectorAll('article') || []));
+  }
+
+  function applyFilters() {
+    const query = searchInput?.value.toLowerCase() || '';
+    const cards = getCards();
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const name = card.dataset.name || '';
+      const desc = card.dataset.description || '';
+      const domains = card.dataset.domains || '';
+      const lang = card.dataset.language || '';
+
+      let show = true;
+
+      if (query && !name.includes(query) && !desc.includes(query)) show = false;
+
+      const domainFilters = activeFilters.get('domain');
+      if (domainFilters?.size && !Array.from(domainFilters).some((d) => domains.includes(d)))
+        show = false;
+
+      const langFilters = activeFilters.get('language');
+      const langList = lang.split(',').filter(Boolean);
+      if (langFilters?.size && !Array.from(langFilters).some((l) => langList.includes(l))) show = false;
+
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    if (resultCount) resultCount.textContent = `Showing ${visible} projects`;
+    if (activeFiltersDiv)
+      activeFiltersDiv.classList.toggle('hidden', !query && !activeFilters.size);
+    if (clearBtn) clearBtn.classList.toggle('hidden', !activeFilters.size);
+  }
+
+  function sortCards() {
+    if (!projectGrid) return;
+    const cards = Array.from(projectGrid.querySelectorAll('article'));
+    const sortBy = sortSelect?.value || 'updated';
+
+    cards.sort((a, b) => {
+      if (sortBy === 'stars') return Number(b.dataset.stars) - Number(a.dataset.stars);
+      if (sortBy === 'updated')
+        return (b.dataset.updated || '').localeCompare(a.dataset.updated || '');
+      if (sortBy === 'name') return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+      return 0;
+    });
+
+    cards.forEach((card) => projectGrid.appendChild(card));
+  }
+
+  searchInput?.addEventListener('input', applyFilters);
+  sortSelect?.addEventListener('change', () => {
+    sortCards();
+    applyFilters();
+  });
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const el = btn as HTMLElement;
+      const type = el.dataset.filterType!;
+      const value = el.dataset.filterValue!;
+
+      if (!activeFilters.has(type)) activeFilters.set(type, new Set());
+      const set = activeFilters.get(type)!;
+
+      if (set.has(value)) {
+        set.delete(value);
+        btn.classList.remove('bg-primary-500', 'text-white', 'border-primary-500');
+      } else {
+        set.add(value);
+        btn.classList.add('bg-primary-500', 'text-white', 'border-primary-500');
+      }
+
+      if (set.size === 0) activeFilters.delete(type);
+      applyFilters();
+    });
+  });
+
+  clearBtn?.addEventListener('click', () => {
+    activeFilters.clear();
+    filterBtns.forEach((btn) =>
+      btn.classList.remove('bg-primary-500', 'text-white', 'border-primary-500'),
+    );
+    if (searchInput) searchInput.value = '';
+    applyFilters();
+  });
+
+  showLearning?.addEventListener('change', () => {
+    learningGrid?.classList.toggle('hidden', !showLearning.checked);
+    applyFilters();
+  });
+</script>

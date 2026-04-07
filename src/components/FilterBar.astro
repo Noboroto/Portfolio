@@ -1,0 +1,86 @@
+---
+interface Props {
+  domains: string[];
+  languages: string[];
+}
+
+const { domains, languages } = Astro.props;
+---
+
+<div class="mb-8 space-y-4" id="filter-bar">
+  <div class="relative max-w-md mx-auto">
+    <svg
+      class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+    </svg>
+    <label for="project-search" class="sr-only">Search projects</label>
+    <input
+      type="text"
+      id="project-search"
+      placeholder="Search projects..."
+      class="w-full pl-10 pr-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+    />
+  </div>
+
+  <div class="flex flex-wrap items-center justify-center gap-2">
+    <select
+      id="project-sort"
+      class="px-3 py-1.5 text-sm rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800"
+    >
+      <option value="updated">Recently Updated</option>
+      <option value="stars">Most Stars</option>
+      <option value="name">Alphabetical</option>
+    </select>
+
+    <span class="text-slate-400">|</span>
+
+    {
+      domains.map((d) => (
+        <button
+          class="filter-btn px-3 py-1 text-xs rounded-full border border-slate-300 dark:border-slate-600 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-colors"
+          data-filter-type="domain"
+          data-filter-value={d}
+        >
+          {d}
+        </button>
+      ))
+    }
+
+    <span class="text-slate-400">|</span>
+
+    {
+      languages.slice(0, 8).map((l) => (
+        <button
+          class="filter-btn px-3 py-1 text-xs rounded-full border border-slate-300 dark:border-slate-600 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-colors"
+          data-filter-type="language"
+          data-filter-value={l.toLowerCase()}
+        >
+          {l}
+        </button>
+      ))
+    }
+
+    <button id="clear-filters" class="px-3 py-1 text-xs text-red-500 hover:text-red-700 hidden">
+      Clear All
+    </button>
+  </div>
+
+  <div id="active-filters" class="flex flex-wrap items-center justify-center gap-2 hidden">
+    <span class="text-sm text-slate-500" id="result-count"></span>
+  </div>
+
+  <div class="flex justify-center">
+    <label class="flex items-center gap-2 text-sm text-slate-500 cursor-pointer">
+      <input type="checkbox" id="show-learning" class="rounded border-slate-300" />
+       Show learning/practice repos
+    </label>
+  </div>
+</div>
