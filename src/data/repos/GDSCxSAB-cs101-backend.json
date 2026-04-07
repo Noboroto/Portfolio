@@ -23,7 +23,7 @@
 	"updatedAt": "2023-06-27T18:53:31Z",
 	"createdAt": "2023-03-23T11:59:00Z",
 	"isFork": false,
-	"visible": true,
+	"visible": false,
 	"tier": "core",
 	"domain": [
 		"web"
