@@ -31,7 +31,7 @@
 		"data-processing"
 	],
 	"displayName": "Student Admission Manager",
-	"displayDescription": "Full-stack university admission data management system. Helps Vietnamese university admissions offices analyze and manage applicant data efficiently. Features dashboards with Nivo/ECharts heatmaps, Elasticsearch full-text search, Excel import/export, and Better Auth RBAC. Contains 2 parts: React + MUI frontend with data visualization, and Express + Prisma + PostgreSQL + Redis backend. Dockerized with production compose.",
+	"displayDescription": "Full-stack university admission data management system. Helps Vietnamese university admissions offices analyze and manage applicant data efficiently. Features dashboards with Nivo/ECharts heatmaps, full-text search, Excel import/export, and Better Auth RBAC. Contains 2 parts: React + MUI frontend with data visualization, and Express + Prisma + PostgreSQL + Redis backend. Dockerized with production compose.",
 	"private": true,
 	"priority": 8
 }
