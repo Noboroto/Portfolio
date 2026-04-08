@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-		"build:llm": "node gen-llm.js"
+		"build:llm": "node scripts/gen-llms.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
