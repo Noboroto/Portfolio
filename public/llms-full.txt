@@ -1,0 +1,487 @@
+# Thanh Tu Vo — Full Portfolio
+
+> Software Developer | ML Enthusiast | Open Source Contributor
+
+CS student passionate about building practical software solutions. Experience spanning web development, machine learning, desktop applications, and competitive programming.
+
+## Contact
+
+- Email: thanhtuvo135@gmail.com
+- GitHub: https://github.com/Noboroto
+- LinkedIn: https://www.linkedin.com/in/thanhtuvo135/
+
+## Education
+
+- **VNUHCM - University of Science** — Bachelor's degree, Computer Vision Major, High-Quality Program in Information Technology (Aug 2021 – Jun 2026)
+- **Hung Vuong High School For The Gifted - Binh Duong** — High School Diploma, Specialized Informatics Class (2018 – 2021)
+
+## Languages (13)
+
+Assembly, C, C#, C++, CSS, HTML, JavaScript, Pascal, PowerShell, Prolog, Python, TeX, TypeScript
+
+## Stats
+
+- 50 visible projects
+- 14 featured projects
+- 16 dockerized projects
+
+## Featured Projects (14)
+
+### AbnormalSense
+
+Real-time security monitoring system detecting strangers and abnormal behaviors in video streams. Needed for automated surveillance in restricted areas without manual monitoring. Works by combining face recognition (ArcFace/RetinaFace), pose estimation (HRNet/YOLO-Pose), object tracking (ByteTrack), and skeleton-based behavior analysis (ST-GCN) in a dual pipeline. Contains 4 parts: face recognition service, pose estimation service, behavior analysis engine, and FastAPI serving layer. Used by security teams. Built with PyTorch Lightning, FastAPI, Docker microservices.
+
+**Tags:** computer-vision, deep-learning, pytorch-lightning, face-recognition, pose-estimation, anomaly-detection, fastapi, docker, arcface, object-tracking, microservices, bytetrack, st-gcn
+**URL:** https://github.com/Noboroto/AbnormalSense
+**Languages:** Python
+**Updated:** 2026-02-25
+
+### AIoT Smart Greenhouse
+
+Full-stack AIoT greenhouse monitoring and control system. Needed for automated agricultural environment management using IoT sensors. Features real-time sensor dashboards (temperature, humidity, soil moisture, water level, light, rain), automated device control (fans, pumps, lights, windows), MQTT-based ESP32 communication, configurable alert thresholds, and email notifications. Contains 4 parts: ESP32 embedded firmware (C++), Node.js/Express backend with MongoDB + Redis, Next.js frontend with WebSocket live updates, and Docker Compose deployment. Built for an HCMUS IoT course. Used by agriculture enthusiasts and IoT students.
+
+**Tags:** aiot, iot, smart-greenhouse, esp32, mqtt, nextjs, expressjs, mongodb, redis, docker, websocket, react, typescript, real-time, sensor-monitoring, devops, agriculture
+**URL:** https://github.com/nhnhu146/aiot-smart-greenhouse
+**Languages:** TypeScript, JavaScript, C++, PowerShell
+**Updated:** 2025-09-26
+
+### PsyUS
+
+Psychological counselling appointment booking platform for university students. Needed to connect students with counselors through streamlined scheduling. Features appointment booking, availability management, session tracking, and role-based access. Contains 2 parts: Next.js 16 frontend (React 19, MUI 7) and NestJS 11 + Fastify backend, backed by PostgreSQL 17 with Prisma ORM and Better Auth. Dockerized monorepo.
+
+**Tags:** nextjs, nestjs, typescript, postgresql, prisma, better-auth, healthcare, booking-platform, docker, monorepo, react, fastify, mui
+**URL:** https://github.com/Noboroto/PsyUS
+**Languages:** TypeScript
+**Updated:** 2026-04-06
+
+### Student Admission Manager
+
+Full-stack university admission data management system. Helps Vietnamese university admissions offices analyze and manage applicant data efficiently. Features dashboards with Nivo/ECharts heatmaps, full-text search, Excel import/export, and Better Auth RBAC. Contains 2 parts: React + MUI frontend with data visualization, and Express + Prisma + PostgreSQL + Redis backend. Dockerized with production compose.
+
+**Tags:** typescript, react, express, postgresql, prisma, redis, mui, data-visualization, docker, better-auth, university-admission, nivo, echarts
+**URL:** https://github.com/Noboroto/data-tuyensinh
+**Languages:** TypeScript
+**Updated:** 2026-04-04
+
+### Excel Anonymizer
+
+CLI tool to anonymize and deanonymize multi-sheet Excel files with consistent fake-value mapping. Essential for researchers and admins sharing student data (MSSV, CMND, names) while preserving privacy compliance. Works by generating consistent fake values and exporting a mapping CSV for reversible anonymization. Contains a Python CLI with openpyxl and pandas. Managed with uv package manager. v0.4.2.
+
+**Tags:** python, excel, anonymization, data-privacy, cli-tool, openpyxl, pandas, uv-package-manager, data-processing, gdpr
+**URL:** https://github.com/Noboroto/excel-anonymizer-uv
+**Languages:** Python
+**Updated:** 2026-04-07
+
+### Pretrain-SkateFormer
+
+Training and anomaly detection evaluation codebase for SkateFormer (ECCV 2024) and ST-GCN++ skeleton-based action recognition models. Needed for thesis research on behavior anomaly detection. Contains skeleton extraction pipelines (YOLO-Pose, HRNet), normalizing flow scorers, and multi-dataset benchmarking on ShanghaiTech/Avenue/UBnormal. Used by CV researchers. Built with Python, PyTorch.
+
+**Tags:** deep-learning, action-recognition, anomaly-detection, skeleton-based, pytorch, python, computer-vision, graph-neural-network, normalizing-flow, research, skateformer, st-gcn, docker
+**URL:** https://github.com/Noboroto/Pretrain-SkateFormer
+**Languages:** Python
+**Updated:** 2026-04-01
+
+### score-converter
+
+Vietnamese university admission score calculator web app. Needed because Vietnamese admissions use multiple complex scoring methods that are hard to compare manually. Works by converting and cross-referencing scores across 4 methods: high school GPA, national exam (THPTQG), aptitude tests (DGNL/TSA), with percentile tables and real-time auto-calculation. Contains a single-page React app with score computation engine and percentile lookup tables. Used by high school students and parents comparing admission chances. Built with React, Vite, Tailwind CSS.
+
+**Tags:** javascript, react, vite, tailwindcss, education, vietnam-university-admission, score-calculation, percentile-table, docker, lucide-react
+**URL:** https://github.com/Noboroto/score-converter
+**Languages:** JavaScript
+**Updated:** 2025-07-28
+
+### DiaChi2Cap
+
+Windows GUI tool for batch-converting Vietnamese addresses from old format to the new 2-level administrative format. Needed because Vietnam reformed its administrative structure and millions of address records need updating. Works by calling the address-converter.io.vn API in batches of 1000 with rate-limit retry. Contains CustomTkinter desktop UI with TXT/Excel file input and progress tracking. Used by government workers, logistics teams, and data administrators. Built with Python, CustomTkinter, PyInstaller for portable exe.
+
+**Tags:** vietnamese-address, address-conversion, customtkinter, python-gui, windows-desktop, batch-processing, excel, api-client, pyinstaller, vietnam
+**URL:** https://github.com/Noboroto/DiaChi2Cap
+**Languages:** Python, PowerShell
+**Updated:** 2026-04-07
+
+### PidgeotMail
+
+Desktop mail merge application for Gmail that sends personalized bulk emails. Solves the problem of sending hundreds of individually customized emails (grade reports, event invitations, certificates). Works by pulling templates from Gmail drafts, merging recipient data from Google Sheets or Excel, and sending via Gmail API with per-recipient CC/BCC and attachments. Contains 2 parts: WPF desktop client (MVVM + Material Design) and Google API integration layer. Used by teachers, student organizations, and office teams. Built with C#, MimeKit, EPPlus, with auto-updater support.
+
+**Tags:** csharp, wpf, mvvm, gmail-api, google-sheets-api, mail-merge, bulk-email, dotnet-framework, material-design, mimekit, epplus, desktop-application, auto-updater
+**URL:** https://github.com/Noboroto/PidgeotMail
+**Languages:** C#
+**Updated:** 2022-12-17
+
+### Athena Intelligent Olympia
+
+Reverse-engineered and feature-extended quiz competition software suite inspired by Vietnam's Olympia TV show. Built by studying the original closed-source Athena software, then recreating and enhancing it with new capabilities. Contains 8+ projects: AIClient (player app), AIServer (host app), AICtrlLib (control library), AIDataManager (question DB), AILib (shared logic), EncodingAthenaData/DecodingAthena (data tools), and ExcelToAthenaDatabase (Excel import). Features client-server multiplayer, AI opponent, and question database management. Used by Vietnamese schools and clubs running knowledge contests. Built with C#, WPF.
+
+**Tags:** csharp, wpf, reverse-engineering, quiz-game, client-server, game-development, educational-software, ai-opponent, database-management, dotnet, olympia, multi-project
+**URL:** https://github.com/Noboroto/Athena-Intelligent-Olympia
+**Languages:** C#
+**Updated:** 2021-05-19
+
+### font-image-generator
+
+Web app that generates 3D rendered font preview images. Helps designers and developers evaluate typefaces before committing to a design. Works by rendering uploaded font files as stylized 3D text using React Three Fiber with configurable materials, lighting, and camera angles, then exporting as images. Contains React frontend with Three.js 3D scene and opentype.js font parser. Used by graphic designers and font enthusiasts. Built with JavaScript, React, Three.js, Vite, Tailwind CSS.
+
+**Tags:** javascript, react, threejs, react-three-fiber, vite, tailwindcss, 3d-rendering, font-preview, image-generation, opentype, docker
+**URL:** https://github.com/Noboroto/font-image-generator
+**Languages:** JavaScript
+**Updated:** 2024-12-11
+
+### CaroGame
+
+Console-based Caro (Gomoku) game for Windows with colorful terminal rendering, sound effects, save/load functionality, and player account tracking. A fun university project letting two players compete in the popular Vietnamese strategy game. Built with C++.
+
+**Tags:** cpp, gomoku, caro-game, console-game, windows, game-development, university-project, sound-effects
+**URL:** https://github.com/Noboroto/CaroGame
+**Languages:** C++
+**Updated:** 2024-12-11
+
+### Dich Vu Cong Support
+
+AI-powered Vietnamese public services assistant that helps citizens navigate government service procedures with natural language Q&A. Needed because Vietnamese public service procedures are complex and documentation is scattered. Features GPT-4.1-mini chat, Whisper speech-to-text, and OpenAI TTS for accessibility. Contains 2 parts: React + MUI frontend with CopilotKit AI chat, and Express.js backend with Redis sessions and PostgreSQL via Prisma. Used by Vietnamese citizens needing guidance on government services. Monorepo managed with pnpm workspaces.
+
+**Tags:** typescript, react, expressjs, openai-api, copilotkit, material-ui, prisma, postgresql, redis, speech-to-text, text-to-speech, docker, pnpm-workspace, monorepo, vietnamese, chatbot
+**URL:** https://github.com/Noboroto/dichvucong-support
+**Languages:** TypeScript
+**Updated:** 2025-10-18
+
+### Bitmap-Cutting-Cpp
+
+CLI tool that reads BMP files, parses bitmap headers/DIB/pixel data, and splits images into a grid of sub-images by specified row and column partitions. Useful for developers needing programmatic image region extraction without heavy library dependencies. Built in C++ with low-level binary file I/O.
+
+**Tags:** cpp, bitmap, image-processing, image-cropping, cli-tool, file-format, binary-io, computer-graphics
+**URL:** https://github.com/Noboroto/Bitmap-Cutting-Cpp
+**Languages:** C++
+**Updated:** 2024-12-10
+
+
+## Core Projects (11)
+
+### Portfolio
+
+Personal developer portfolio website showcasing projects, skills, and experience. Designed for recruiters, collaborators, and hiring managers to quickly assess technical background and project highlights. Features project filtering by domain/language, dark mode, and responsive layout. Contains Astro pages, reusable components, and curated project data. Built with Astro 6, Tailwind CSS v4, TypeScript, deployed via GitHub Pages.
+
+**Tags:** typescript, astro, tailwindcss, portfolio, personal-website, github-pages, pnpm, static-site
+**URL:** https://github.com/Noboroto/Portfolio
+**Languages:** TypeScript
+**Updated:** 2026-04-07
+
+### sab-url
+
+Self-hosted URL shortener service for SAB at t.sab.edu.vn. Needed for creating branded short links for event promotions and social media campaigns. Powered by Shlink with a custom web client frontend, MariaDB database, and OAuth2 proxy for member-only access. Contains 3 parts: Shlink backend, custom frontend client, and Nginx reverse proxy. Used by SAB board officers. Deployed via Docker Compose.
+
+**Tags:** typescript, shlink, url-shortener, docker-compose, mariadb, oauth2-proxy, nginx, self-hosted, student-club, vite, docker
+**URL:** https://github.com/Noboroto/sab-url
+**Languages:** TypeScript
+**Updated:** 2025-10-13
+
+### infographics
+
+Interactive infographic website showcasing HCMUS Faculty of Information Technology departments (CS, AI, SE, Data Science). Needed for university open days and department promotion. Features responsive design with exportable PNG/ZIP output via html2canvas. Contains HTML pages with Tailwind CSS styling and Docker support. Used by HCMUS FIT for outreach materials.
+
+**Tags:** html, javascript, tailwindcss, infographic, data-visualization, university, hcmus, docker, png-export, responsive-design, html2canvas
+**URL:** https://github.com/Noboroto/infographics
+**Languages:** HTML, JavaScript
+**Updated:** 2025-07-29
+
+### SAB-Delegate
+
+Discord bot for HCMUS Student Activities Board server management. Needed to automate repetitive admin tasks for a large student organization Discord server. Features 14+ slash commands: attendance tracking by role, polls, birthday reminders, scheduled announcements, notes, word dictionary, bulk role assignment, message purge, and thread management. Contains TypeScript bot with discord.js v14, SQLite persistence via better-sqlite3, and Docker deployment. Supports multiple bot tokens. Used by SAB board officers.
+
+**Tags:** typescript, discord-js, discord-bot, sqlite, better-sqlite3, docker, node-schedule, slash-commands, student-club, automation, hcmus
+**URL:** https://github.com/Noboroto/SAB-Delegate
+**Languages:** TypeScript
+**Updated:** 2025-02-24
+
+### sab_preoder
+
+Backend API server for SAB merchandise preorder management. Needed to streamline order collection for student org fundraisers and event merchandise. Works as a REST API handling order CRUD, payment tracking, and email confirmations. Contains Express.js server with Zod validation, Mongoose/MySQL data layer, and Nodemailer email service. Used by HCMUS SAB officers managing merchandise campaigns. Built with TypeScript, Express.js, MongoDB/MySQL, Docker.
+
+**Tags:** typescript, expressjs, nodejs, mongoose, mysql, sqlite, zod, docker, nodemailer, rest-api, preorder-system, student-club
+**URL:** https://github.com/Noboroto/sab_preoder
+**Languages:** TypeScript, JavaScript
+**Updated:** 2024-11-24
+
+### My Tiny URL
+
+Self-hosted URL shortener using Shlink with a custom web client frontend. Gives individuals and small teams a private, branded link shortening service with full analytics control. Contains 3 parts: Shlink backend, custom frontend client, and MariaDB database, with OAuth2-Proxy for Google authentication. Deployed via Docker Compose on custom domain.
+
+**Tags:** url-shortener, shlink, docker, mariadb, oauth2-proxy, self-hosted, devops, google-auth
+**URL:** https://github.com/Noboroto/my-tiny-url
+**Languages:** TypeScript
+**Updated:** 2024-11-07
+
+### SAB Mailer
+
+Email automation CLI tool for HCMUS SAB communications. Needed to streamline bulk sending of recruitment results, event invitations, and announcements. Works by parsing CSV recipient lists, replacing placeholders in HTML email templates, and sending via Gmail SMTP using Nodemailer. Built with TypeScript.
+
+**Tags:** typescript, nodemailer, email-automation, gmail-smtp, html-email, bulk-email, sab, cli-tool, csv-parsing
+**URL:** https://github.com/Noboroto/sabmailer
+**Languages:** TypeScript
+**Updated:** 2024-10-17
+
+### GenerateReport
+
+Automated report generator desktop application. Reduces repetitive paperwork for administrative staff compiling periodic reports from structured data. Contains a WPF app with MVVM architecture, Material Design UI, file management, and templated report output. Built with C#, WPF, .NET.
+
+**Tags:** csharp, wpf, mvvm, report-generator, material-design, desktop-app, dotnet, xaml, automation
+**URL:** https://github.com/Noboroto/GenerateReport
+**Languages:** C#
+**Updated:** 2023-08-20
+
+### Python-Web-Crawler
+
+Web scraper that crawls Vietnamese novel chapters from truyenchu.vn. Needed for offline reading of web novels. Works by using BeautifulSoup and Requests to extract chapter text and generate an HTML table of contents. Contains a Python scraping script with chapter discovery and content extraction. Built with Python, BeautifulSoup, Requests.
+
+**Tags:** python, web-scraping, beautifulsoup, requests, web-crawler, html-parsing, data-extraction, vietnamese
+**URL:** https://github.com/Noboroto/Python-Web-Crawler
+**Languages:** Python
+**Updated:** 2023-02-01
+
+### SAB Lucky Letter 2023
+
+Interactive lucky letter web experience for HCMUS SAB's 2023 Lunar New Year celebration. Engages university students with a fun digital tradition during the festival season.
+
+**URL:** https://github.com/Noboroto/HTML-Lucky-Letter-2023
+**Languages:** HTML
+**Updated:** 2023-01-21
+
+### SAB Lucky Letter 2023 (Public)
+
+Public image assets (header and footer PNG banners) hosted via GitHub for the SAB Lucky Letter 2023 HTML email campaign. Used as a CDN for email template images by SAB communications team.
+
+**Tags:** html-email, email-assets, sab, static-assets, lucky-letter, image-hosting, hcmus
+**URL:** https://github.com/Noboroto/HTML-Lucky-Letter-SAB-2023-public_file
+**Languages:** HTML
+**Updated:** 2023-01-20
+
+
+## Specialized Projects (19)
+
+### Coffee-Management
+
+Coffee shop management desktop app handling orders, menu, and inventory. Designed for small cafe owners in Vietnam needing a lightweight POS system without subscription fees. Features clean architecture (Core/Infrastructure/Presentation layers), Entity Framework ORM, and a plugin system for extensibility. Contains 4 architectural layers with WPF MVVM frontend and SQL Server database. Built with C#, WPF.
+
+**Tags:** csharp, wpf, desktop-app, clean-architecture, entity-framework, mvvm, plugin-system, management-system, university-project, sql-server, pos-system, docker
+**URL:** https://github.com/Noboroto/Coffee-Management
+**Languages:** C#
+**Updated:** 2025-04-24
+
+### Human Action Recognition
+
+LaTeX research report and presentation on human action recognition techniques for a computer vision course. Contains PDF report, PowerPoint slides, bibliography, and reference images covering pose estimation and activity classification using deep learning. Used as academic reference for CV researchers.
+
+**Tags:** latex, research-report, human-action-recognition, computer-vision, academic, university-project, deep-learning, pose-estimation
+**URL:** https://github.com/Noboroto/Human-Action-Regconition
+**Languages:** TeX
+**Updated:** 2025-04-21
+
+### edge-detect-html
+
+Browser-based real-time Sobel edge detection app. An educational tool for students learning computer vision without needing Python or C++ setup. Works by applying convolution filters to video frames using HTML5 Canvas and vanilla JavaScript. Features adjustable threshold, resolution scaling, and adaptive frame skipping for performance.
+
+**Tags:** edge-detection, sobel-filter, html5-canvas, javascript, image-processing, computer-vision, real-time, video-processing
+**URL:** https://github.com/Noboroto/edge-detect-html
+**Languages:** HTML
+**Updated:** 2025-03-26
+
+### computer-vision
+
+Low-level computer vision algorithms implemented in C++ from scratch. Needed as educational coursework for CS students studying image processing fundamentals without high-level library abstractions. Contains 4 theory exercises and 3 labs covering filtering, edge detection, feature extraction, built with CMake. Used by HCMUS computer vision students.
+
+**Tags:** computer-vision, image-processing, cpp, cmake, edge-detection, filtering, coursework, opencv
+**URL:** https://github.com/Noboroto/computer-vision
+**Languages:** C++
+**Updated:** 2025-03-21
+
+### Computer-Graphics
+
+WebGL-based computer graphics demos implementing fundamental rendering algorithms. Course assignments covering Bresenham's line drawing, ellipse/parabola/hyperbola plotting, and interactive canvas drawing with configurable colors and stroke sizes. Used by CS students learning 2D graphics programming at HCMUS. Built with JavaScript, HTML5 Canvas, WebGL.
+
+**Tags:** webgl, computer-graphics, javascript, bresenham-algorithm, rendering, canvas, academic-project, 2d-graphics, html5
+**URL:** https://github.com/Noboroto/Computer-Graphics
+**Languages:** JavaScript
+**Updated:** 2025-02-24
+
+### Data-Mining
+
+Jupyter notebook labs for university Data Mining course (CSC14004). Needed as hands-on coursework for CS students learning practical data mining at HCMUS. Contains 3 labs: data preprocessing (Lab 1), classification (Lab 2), and clustering (Lab 3), each with PDF specs and Jupyter notebooks. Uses Python, scikit-learn, pandas.
+
+**Tags:** data-mining, jupyter-notebook, python, classification, clustering, data-preprocessing, scikit-learn, machine-learning, coursework
+**URL:** https://github.com/Noboroto/Data-Mining
+**Languages:** Python
+**Updated:** 2024-12-29
+
+### math-method
+
+Numerical methods implementations in Python for university mathematical methods course (PPTG-CLC-2024). Covers fractal generation, FAISS vector similarity search, and affine image transformations for grayscale and color images. Contains 2 practice assignments and utility modules. Used by math and CS students solving computational problems. Built with Python, NumPy, FAISS.
+
+**Tags:** numerical-methods, python, fractals, faiss, affine-transformation, image-processing, linear-algebra, coursework, vector-search
+**URL:** https://github.com/Noboroto/math-method
+**Languages:** Python
+**Updated:** 2024-12-20
+
+### IoT Fire Alarm
+
+Full-stack IoT fire alarm system with real-time monitoring. Needed for affordable fire detection in homes, labs, or small buildings. Works by reading sensor data from Arduino, sending it to a Node.js/Express backend API, and displaying real-time graphs on a React dashboard with Chart.js. Contains 3 parts: Arduino sensor firmware (C++), Express backend API, and React + MUI frontend. Dockerized with Docker Compose.
+
+**Tags:** iot, arduino, fire-alarm, react, nodejs, express, docker, chart-js, mui, embedded-systems, real-time, sensor-monitoring
+**URL:** https://github.com/Noboroto/IOT-Fire-Alarm
+**Languages:** CSS, JavaScript, C++, HTML
+**Updated:** 2024-08-14
+
+### Image-Retrieval-System
+
+Content-based image retrieval engine that searches and ranks images by visual similarity. Needed for building visual search applications. Works by extracting SIFT features and color histograms from images, then matching query images against a dataset using OpenCV. Contains C++20 CBIR implementation with CMake build. Used by CV researchers and students.
+
+**Tags:** cpp, opencv, image-retrieval, sift, color-histogram, computer-vision, cmake, content-based-retrieval, academic-project
+**URL:** https://github.com/Noboroto/Image-Retrieval-System
+**Languages:** C++, C
+**Updated:** 2024-07-23
+
+### Visual_Image_Retrieval
+
+Visual information retrieval lab assignments implementing content-based image retrieval algorithms. Contains 3 labs covering color histograms, feature extraction, and similarity search in C++ with CMake. Used by CV students building image search applications at HCMUS.
+
+**Tags:** cpp, image-retrieval, computer-vision, content-based-retrieval, cmake, feature-extraction, university-project, color-histogram
+**URL:** https://github.com/Noboroto/Visual_Image_Retrieval
+**Languages:** C++
+**Updated:** 2024-06-22
+
+### MSD-DeepLearning
+
+Deep learning experiments for Multimedia Signal and Data processing course. Coursework notebooks exploring neural network architectures and training pipelines for multimedia applications. Used by CS students at HCMUS. Built with Python, PyTorch.
+
+**Tags:** python, deep-learning, multimedia-processing, signal-processing, neural-networks, academic-project, machine-learning, pytorch
+**URL:** https://github.com/Noboroto/MSD-DeepLearning
+**Languages:** Python
+**Updated:** 2024-05-21
+
+### First-Order-Logic-Copy
+
+First-order logic knowledge base system with automated inference. Built as an AI course group project to demonstrate logical reasoning concepts. Works by defining facts and rules in SWI-Prolog, then querying via a C# simulation frontend. Contains 2 parts: Prolog inference engine (with animal classification and royal family examples) and C# GUI. Used by AI students studying formal logic and automated reasoning.
+
+**Tags:** first-order-logic, prolog, artificial-intelligence, knowledge-base, inference-engine, csharp, swi-prolog, logic-programming, coursework
+**URL:** https://github.com/Noboroto/First-Order-Logic-Copy
+**Languages:** Prolog, C#
+**Updated:** 2023-07-28
+
+### Arduino
+
+Arduino IoT firmware projects for university embedded systems coursework. Contains labs and quizzes implementing LED control patterns with button input on Arduino microcontrollers. Used by students prototyping embedded systems at HCMUS. Built with C++/Arduino.
+
+**Tags:** arduino, iot, embedded-systems, firmware, led-control, microcontroller, coursework
+**URL:** https://github.com/Noboroto/Arduino
+**Languages:** C++
+**Updated:** 2023-06-13
+
+### Network-Socket
+
+Custom HTTP web server built from scratch using TCP sockets in C#. Created to learn networking fundamentals hands-on. Features user authentication, HTTP request/response handling, and static file serving. Contains 2 parts: C# web server implementation and LaTeX academic report documenting the architecture. Used as a networking course reference at HCMUS.
+
+**Tags:** csharp, tcp-socket, http-server, network-programming, socket-programming, web-server, dotnet, academic-project, latex-report
+**URL:** https://github.com/Noboroto/Network-Socket
+**Languages:** C#, TeX, CSS, HTML
+**Updated:** 2023-01-05
+
+### HorseGame
+
+Console-based board game where players roll dice to race horses across configurable grid maps (3x3 to 7x7) with directional cells, blocking, and kicking mechanics. Supports 2-4 players with account persistence. A fun Vietnamese strategy game built with C++ for Windows console.
+
+**Tags:** cpp, board-game, console-game, game-development, windows, dice-game, multiplayer, vietnamese-game
+**URL:** https://github.com/Noboroto/HorseGame
+**Languages:** C++
+**Updated:** 2021-11-24
+
+### ShutdownRemoteConsole
+
+Remote shutdown console for Windows machines over a local network. Useful for IT admins and lab managers needing to power off multiple PCs from a single workstation. Works via TCP client-server communication. Contains 2 parts: ShutdownRemoteClient and ShutdownRemoteServer console apps. Built with C#, .NET.
+
+**Tags:** remote-shutdown, csharp, dotnet, client-server, networking, windows, system-administration, console-app
+**URL:** https://github.com/Noboroto/ShutdownRemoteConsole
+**Languages:** C#
+**Updated:** 2020-09-19
+
+### Re-Score-Themis
+
+Automated scoring tool for the Themis Online Judge system. Reorganizes contestant submissions and regenerates scoring logs/leaderboards, saving Vietnamese competitive programming contest organizers from manual score tallying. Built as a C# console app that processes submission files and outputs structured results. Used by contest staff at Vietnamese informatics competitions.
+
+**Tags:** csharp, dotnet-framework, competitive-programming, themis-judge, scoring-automation, console-application, file-processing, leaderboard, vietnam-education
+**URL:** https://github.com/Noboroto/Re-Score-Themis
+**Languages:** C#
+**Updated:** 2020-07-15
+
+### Network
+
+UDP client-server socket programming implementation in C# demonstrating basic network communication with text message exchange. Hands-on coursework for students learning computer networking fundamentals on Windows. Built with C#, .NET.
+
+**Tags:** csharp, udp-socket, client-server, network-programming, dotnet, socket-programming, academic-project
+**URL:** https://github.com/Noboroto/Network
+**Languages:** C#
+**Updated:** 2020-07-01
+
+### OlympiaBank
+
+Question bank manager for the Vietnamese Olympia TV quiz competition format. Helps quiz organizers create, categorize, import from Excel, and export question sets. Works with a WPF MVVM desktop interface with login and question CRUD. Used by Vietnamese schools and clubs running Olympia-style knowledge contests. Built with C#, WPF, XAML.
+
+**Tags:** question-bank, wpf, csharp, mvvm, xaml, quiz-management, desktop-app, olympia, education
+**URL:** https://github.com/Noboroto/OlympiaBank
+**Languages:** C#
+**Updated:** 2020-04-01
+
+
+## Learning Projects (6)
+
+### Code-Python
+
+Python code collection with competitive programming solutions, utility scripts, and git submodule projects.
+
+**Tags:** python, competitive-programming, scripting, utilities
+**URL:** https://github.com/Noboroto/Code-Python
+**Languages:** Python
+**Updated:** 2026-04-07
+
+### Code-Latex
+
+Extensive LaTeX document collection for university courses covering calculus, physics, DSA, computer networks, and more.
+
+**Tags:** latex, academic-writing, coursework, typesetting, university
+**URL:** https://github.com/Noboroto/Code-Latex
+**Languages:** TeX
+**Updated:** 2025-10-31
+
+### Code-CPP
+
+Comprehensive C++ competitive programming solutions from Codeforces, Leetcode, HackerRank, VOJ, ICPC training, and university coursework.
+
+**Tags:** cpp, competitive-programming, leetcode, codeforces, algorithms, data-structures, docker
+**URL:** https://github.com/Noboroto/Code-CPP
+**Languages:** C++
+**Updated:** 2025-05-08
+
+### Lab-3-Sorting
+
+DSA lab implementing and benchmarking multiple sorting algorithms in C++ with performance measurement and reporting.
+
+**Tags:** cpp, sorting-algorithms, data-structures, lab-assignment, performance-benchmarking
+**URL:** https://github.com/Noboroto/Lab-3-Sorting
+**Languages:** C++
+**Updated:** 2023-07-19
+
+### Code-Assembly
+
+x86 assembly language practice code with 16-bit and TASM assembler exercises.
+
+**Tags:** assembly, x86, tasm, low-level-programming
+**URL:** https://github.com/Noboroto/Code-Assembly
+**Languages:** Assembly
+**Updated:** 2022-06-27
+
+### Code-Pascal
+
+Pascal competitive programming solutions and practice code collection.
+
+**Tags:** pascal, competitive-programming, algorithms
+**URL:** https://github.com/Noboroto/Code-Pascal
+**Languages:** Pascal
+**Updated:** 2020-07-02
+

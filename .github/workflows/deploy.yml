@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: gen llm.txt
+        run: pnpm run build:llm
+
       - name: Build Astro site
         run: pnpm run build
 
