@@ -21,6 +21,7 @@
 	"updatedAt": "2026-04-07T10:44:56Z",
 	"createdAt": "2025-04-28T05:51:30Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "featured",
 	"domain": [
@@ -29,6 +30,5 @@
 	],
 	"displayName": "Excel Anonymizer",
 	"displayDescription": "CLI tool to anonymize and deanonymize multi-sheet Excel files with consistent fake-value mapping. Essential for researchers and admins sharing student data (MSSV, CMND, names) while preserving privacy compliance. Works by generating consistent fake values and exporting a mapping CSV for reversible anonymization. Contains a Python CLI with openpyxl and pandas. Managed with uv package manager. v0.4.2.",
-	"private": true,
 	"priority": 7
 }

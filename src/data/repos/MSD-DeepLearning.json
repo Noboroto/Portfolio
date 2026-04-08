@@ -19,11 +19,11 @@
 	"updatedAt": "2024-05-21T17:52:03Z",
 	"createdAt": "2024-08-19T11:15:00Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "specialized",
 	"domain": [
 		"ml"
 	],
-	"displayDescription": "Deep learning experiments for Multimedia Signal and Data processing course. Coursework notebooks exploring neural network architectures and training pipelines for multimedia applications. Used by CS students at HCMUS. Built with Python, PyTorch.",
-	"private": true
+	"displayDescription": "Deep learning experiments for Multimedia Signal and Data processing course. Coursework notebooks exploring neural network architectures and training pipelines for multimedia applications. Used by CS students at HCMUS. Built with Python, PyTorch."
 }

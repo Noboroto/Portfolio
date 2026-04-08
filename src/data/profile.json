@@ -1,7 +1,7 @@
 {
 	"name": "Tu Vo-Thanh",
 	"tagline": "Software Developer | ML Enthusiast | Open Source Contributor",
-	"bio": "CS student passionate about building practical software solutions. Experience spanning web development, machine learning, desktop applications, and competitive programming.",
+	"bio": "My short-term goal is to contribute to creating efficient and user-friendly tools that provide valuable assistance to students and faculty. In the long term, I aim to work in AI DevOps positions, where I can combine my technical skills with a deep understanding of AI infrastructure, deployment, and optimization.",
 	"email": "thanhtuvo135@gmail.com",
 	"github": "https://github.com/Noboroto",
 	"linkedin": "https://www.linkedin.com/in/thanhtuvo135/",
@@ -15,10 +15,7 @@
 			"field": "Computer Vision Major, High-Quality Program in Information Technology",
 			"startDate": "Aug 2021",
 			"endDate": "Jun 2026",
-			"skills": [
-				"Critical Thinking",
-				"Debugging"
-			]
+			"skills": ["Critical Thinking", "Debugging"]
 		},
 		{
 			"institution": "Hung Vuong High School For The Gifted - Binh Duong",
@@ -26,10 +23,95 @@
 			"field": "Specialized Informatics Class",
 			"startDate": "2018",
 			"endDate": "2021",
-			"skills": [
-				"Critical Thinking",
-				"Debugging"
+			"skills": ["Critical Thinking", "Debugging"]
+		}
+	],
+	"experience": [
+		{
+			"organization": "SAB in HCMUS",
+			"location": "Student Activities Board, VNUHCM-University of Science",
+			"roles": [
+				{
+					"title": "Vice President",
+					"type": "Part-time",
+					"startDate": "Oct 2023",
+					"endDate": "Dec 2024",
+					"description": "Tracked all events organized by SAB. Led, guided, directed, and evaluated the work of Heads of Department. Ensured a healthy working environment for about 70 members."
+				},
+				{
+					"title": "Technical Lead",
+					"type": "Part-time",
+					"startDate": "Nov 2022",
+					"endDate": "Oct 2023",
+					"description": "Managed Technician Team, responsible for livestream in events and IT systems. Maintained communication and working tools of SAB (Discord server and bots)."
+				},
+				{
+					"title": "Event Operator of Academy",
+					"type": "Part-time",
+					"startDate": "Nov 2021",
+					"endDate": "Oct 2023",
+					"description": "Joined cs101 event operation and content team — a series of workshops introducing tools that IT students should know."
+				}
 			]
+		},
+		{
+			"organization": "Google Developer Student Clubs - HCMUS",
+			"location": "HCMUS",
+			"roles": [
+				{
+					"title": "Event Operator",
+					"type": "Part-time",
+					"startDate": "Nov 2022",
+					"endDate": "Oct 2023",
+					"description": "Organized and operated developer community events."
+				}
+			]
+		},
+		{
+			"organization": "HVOC - Hung Vuong Olympia Club",
+			"location": "Binh Duong, Vietnam",
+			"roles": [
+				{
+					"title": "Vice President",
+					"type": "Part-time",
+					"startDate": "Jan 2020",
+					"endDate": "Jan 2021",
+					"description": "Developed online training procedures for 8 contestants and 8 trainers. Directed a 15-member operation team of offline Olympia simulation contests. Organized and trained the Technical Team."
+				},
+				{
+					"title": "Technician",
+					"type": "Part-time",
+					"startDate": "Nov 2019",
+					"endDate": "Jan 2020",
+					"description": "Maintained Olympia Competition System."
+				}
+			]
+		}
+	],
+	"honors": [
+		{
+			"title": "First Prize in Informatics",
+			"issuer": "Department of Education and Training of Binh Duong",
+			"date": "Jan 2021",
+			"context": "Binh Duong Excellent Student Contest"
+		},
+		{
+			"title": "Bronze Medal in Informatics",
+			"issuer": "Northern Delta and Coastal Areas Competition Committee",
+			"date": "May 2020",
+			"context": "Competition for Excellent Students of Major High Schools"
+		},
+		{
+			"title": "Silver Medal in Informatics",
+			"issuer": "Department of Education and Training of Long An",
+			"date": "Jul 2019",
+			"context": "Phuong Nam Summer Camp"
+		}
+	],
+	"certifications": [
+		{
+			"name": "C# (Basic)",
+			"issuer": "HackerRank"
 		}
 	]
 }

@@ -20,11 +20,11 @@
 	"updatedAt": "2024-12-20T09:21:36Z",
 	"createdAt": "2023-08-27T14:19:59Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "specialized",
 	"domain": [
 		"data-processing"
 	],
-	"displayDescription": "Numerical methods implementations in Python for university mathematical methods course (PPTG-CLC-2024). Covers fractal generation, FAISS vector similarity search, and affine image transformations for grayscale and color images. Contains 2 practice assignments and utility modules. Used by math and CS students solving computational problems. Built with Python, NumPy, FAISS.",
-	"private": true
+	"displayDescription": "Numerical methods implementations in Python for university mathematical methods course (PPTG-CLC-2024). Covers fractal generation, FAISS vector similarity search, and affine image transformations for grayscale and color images. Contains 2 practice assignments and utility modules. Used by math and CS students solving computational problems. Built with Python, NumPy, FAISS."
 }

@@ -20,12 +20,12 @@
 	"updatedAt": "2021-09-03T07:10:04Z",
 	"createdAt": "2022-12-14T05:37:47Z",
 	"isFork": false,
+	"private": true,
 	"visible": false,
 	"tier": "specialized",
 	"domain": [
 		"desktop-app",
 		"game"
 	],
-	"displayDescription": "Multiplayer trivia quiz game (KnowledgeDuels) with client-server architecture. Lets students and quiz enthusiasts practice general knowledge in competitive game sessions. Contains 2 parts: WPF game client and server-side management interface for hosting quiz sessions. Built with C#, WPF, .NET.",
-	"private": true
+	"displayDescription": "Multiplayer trivia quiz game (KnowledgeDuels) with client-server architecture. Lets students and quiz enthusiasts practice general knowledge in competitive game sessions. Contains 2 parts: WPF game client and server-side management interface for hosting quiz sessions. Built with C#, WPF, .NET."
 }

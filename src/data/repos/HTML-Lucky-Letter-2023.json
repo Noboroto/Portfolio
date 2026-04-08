@@ -10,12 +10,12 @@
 	"updatedAt": "2023-01-21T07:32:52Z",
 	"createdAt": "2023-01-15T07:20:40Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "core",
 	"domain": [
 		"web"
 	],
 	"displayName": "SAB Lucky Letter 2023",
-	"displayDescription": "Interactive lucky letter web experience for HCMUS SAB's 2023 Lunar New Year celebration. Engages university students with a fun digital tradition during the festival season.",
-	"private": true
+	"displayDescription": "Interactive lucky letter web experience for HCMUS SAB's 2023 Lunar New Year celebration. Engages university students with a fun digital tradition during the festival season."
 }

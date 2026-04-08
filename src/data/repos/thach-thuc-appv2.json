@@ -1,0 +1,40 @@
+{
+	"name": "thach-thuc-appv2",
+	"description": null,
+	"url": "https://github.com/Thach-Thuc-FIT-HCMUS/thach-thuc-appv2",
+	"homepage": "https://thachthuc.io.vn",
+	"language": "TypeScript",
+	"languages": [
+		"TypeScript"
+	],
+	"topics": [
+		"typescript",
+		"react",
+		"trpc",
+		"mongoose",
+		"socket-io",
+		"azure",
+		"docker",
+		"turborepo",
+		"vitest",
+		"real-time",
+		"quiz-platform",
+		"vite",
+		"mui",
+		"pnpm"
+	],
+	"stars": 0,
+	"forks": 0,
+	"updatedAt": "2025-01-24T00:00:00Z",
+	"createdAt": "2023-04-17T00:00:00Z",
+	"isFork": false,
+	"private": true,
+	"visible": true,
+	"tier": "featured",
+	"priority": 8,
+	"domain": [
+		"web"
+	],
+	"displayName": "Thách Thức App",
+	"displayDescription": "Real-time quiz competition platform for HCMUS. Full-stack monorepo with React frontend (MUI, Redux, Socket.IO) and tRPC backend (Mongoose, Azure Blob Storage). Features live multiplayer contests with admin/player/viewer roles, game data parsing (XML/CSV), image processing, and JWT auth via Azure AD. Deployed on Azure with Docker, Nginx reverse proxy, Elastic APM monitoring, and SonarQube quality gates. Built by a ~10-person SAB team; contributed backend Game API, data parsers, schema validation, and test infrastructure."
+}

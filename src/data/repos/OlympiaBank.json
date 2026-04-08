@@ -20,11 +20,11 @@
 	"updatedAt": "2020-04-01T08:00:25Z",
 	"createdAt": "2021-04-09T08:39:44Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "specialized",
 	"domain": [
 		"desktop-app"
 	],
-	"displayDescription": "Question bank manager for the Vietnamese Olympia TV quiz competition format. Helps quiz organizers create, categorize, import from Excel, and export question sets. Works with a WPF MVVM desktop interface with login and question CRUD. Used by Vietnamese schools and clubs running Olympia-style knowledge contests. Built with C#, WPF, XAML.",
-	"private": true
+	"displayDescription": "Question bank manager for the Vietnamese Olympia TV quiz competition format. Helps quiz organizers create, categorize, import from Excel, and export question sets. Works with a WPF MVVM desktop interface with login and question CRUD. Used by Vietnamese schools and clubs running Olympia-style knowledge contests. Built with C#, WPF, XAML."
 }

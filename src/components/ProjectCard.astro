@@ -42,6 +42,7 @@ const updatedYear = new Date(repo.updatedAt).getFullYear();
   data-tier={repo.tier}
   data-domains={repo.domain.join(',')}
   data-language={repoLangs.map((l) => l.toLowerCase()).join(',')}
+  data-topics={repo.topics.join(',')}
   data-stars={repo.stars}
   data-updated={repo.updatedAt}
 >

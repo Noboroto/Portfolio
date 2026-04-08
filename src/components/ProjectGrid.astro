@@ -25,7 +25,7 @@ const allRepos = [
       {allRepos.length} repositories across {languages.length} languages
     </p>
 
-    <FilterBar domains={domains} languages={languages} />
+    <FilterBar domains={domains} languages={languages} topics={["deep-learning"]} />
 
     <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {allRepos.map((repo) => <ProjectCard repo={repo} />)}
@@ -58,6 +58,7 @@ const allRepos = [
       const desc = card.dataset.description || '';
       const domains = card.dataset.domains || '';
       const lang = card.dataset.language || '';
+      const topics = card.dataset.topics || '';
 
       let show = true;
 
@@ -70,6 +71,10 @@ const allRepos = [
       const langFilters = activeFilters.get('language');
       const langList = lang.split(',').filter(Boolean);
       if (langFilters?.size && !Array.from(langFilters).some((l) => langList.includes(l))) show = false;
+
+      const topicFilters = activeFilters.get('topic');
+      const topicList = topics.split(',').filter(Boolean);
+      if (topicFilters?.size && !Array.from(topicFilters).some((t) => topicList.includes(t))) show = false;
 
       card.style.display = show ? '' : 'none';
       if (show) visible++;

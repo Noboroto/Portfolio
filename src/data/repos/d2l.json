@@ -16,6 +16,7 @@
 	"updatedAt": "2025-05-25T17:56:04Z",
 	"createdAt": "2024-03-24T02:56:47Z",
 	"isFork": false,
+	"private": true,
 	"visible": false,
 	"tier": "learning",
 	"domain": [

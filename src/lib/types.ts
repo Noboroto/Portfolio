@@ -21,6 +21,32 @@ export interface RepoData {
   priority?: number;
 }
 
+export interface ExperienceRole {
+  title: string;
+  type: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+}
+
+export interface Experience {
+  organization: string;
+  location: string;
+  roles: ExperienceRole[];
+}
+
+export interface Honor {
+  title: string;
+  issuer: string;
+  date: string;
+  context: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+}
+
 export interface ProfileData {
   name: string;
   tagline: string;
@@ -31,4 +57,7 @@ export interface ProfileData {
   facebook: string;
   resumeUrl?: string;
   avatarUrl: string;
+  experience?: Experience[];
+  honors?: Honor[];
+  certifications?: Certification[];
 }

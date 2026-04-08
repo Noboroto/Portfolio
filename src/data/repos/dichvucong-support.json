@@ -27,6 +27,7 @@
 	"updatedAt": "2025-10-18T18:16:51Z",
 	"createdAt": "2025-05-01T07:15:44Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "featured",
 	"domain": [
@@ -35,6 +36,5 @@
 	],
 	"displayName": "Dich Vu Cong Support",
 	"displayDescription": "AI-powered Vietnamese public services assistant that helps citizens navigate government service procedures with natural language Q&A. Needed because Vietnamese public service procedures are complex and documentation is scattered. Features GPT-4.1-mini chat, Whisper speech-to-text, and OpenAI TTS for accessibility. Contains 2 parts: React + MUI frontend with CopilotKit AI chat, and Express.js backend with Redis sessions and PostgreSQL via Prisma. Used by Vietnamese citizens needing guidance on government services. Monorepo managed with pnpm workspaces.",
-	"private": true,
 	"priority": 0
 }

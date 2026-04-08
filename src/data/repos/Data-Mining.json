@@ -20,12 +20,12 @@
 	"updatedAt": "2024-12-29T16:44:30Z",
 	"createdAt": "2024-02-23T04:27:57Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "specialized",
 	"domain": [
 		"data-processing",
 		"ml"
 	],
-	"displayDescription": "Jupyter notebook labs for university Data Mining course (CSC14004). Needed as hands-on coursework for CS students learning practical data mining at HCMUS. Contains 3 labs: data preprocessing (Lab 1), classification (Lab 2), and clustering (Lab 3), each with PDF specs and Jupyter notebooks. Uses Python, scikit-learn, pandas.",
-	"private": true
+	"displayDescription": "Jupyter notebook labs for university Data Mining course (CSC14004). Needed as hands-on coursework for CS students learning practical data mining at HCMUS. Contains 3 labs: data preprocessing (Lab 1), classification (Lab 2), and clustering (Lab 3), each with PDF specs and Jupyter notebooks. Uses Python, scikit-learn, pandas."
 }

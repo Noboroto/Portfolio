@@ -23,6 +23,7 @@
 	"updatedAt": "2021-05-19T15:05:20Z",
 	"createdAt": "2021-06-14T12:59:32Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "featured",
 	"domain": [
@@ -31,6 +32,5 @@
 	],
 	"displayName": "Athena Intelligent Olympia",
 	"displayDescription": "Reverse-engineered and feature-extended quiz competition software suite inspired by Vietnam's Olympia TV show. Built by studying the original closed-source Athena software, then recreating and enhancing it with new capabilities. Contains 8+ projects: AIClient (player app), AIServer (host app), AICtrlLib (control library), AIDataManager (question DB), AILib (shared logic), EncodingAthenaData/DecodingAthena (data tools), and ExcelToAthenaDatabase (Excel import). Features client-server multiplayer, AI opponent, and question database management. Used by Vietnamese schools and clubs running knowledge contests. Built with C#, WPF.",
-	"private": true,
 	"priority": 6
 }

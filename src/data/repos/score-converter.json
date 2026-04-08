@@ -21,6 +21,7 @@
 	"updatedAt": "2025-07-28T20:36:18Z",
 	"createdAt": "2025-06-02T04:15:33Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "featured",
 	"domain": [
@@ -28,6 +29,5 @@
 		"data-processing"
 	],
 	"displayDescription": "Vietnamese university admission score calculator web app. Needed because Vietnamese admissions use multiple complex scoring methods that are hard to compare manually. Works by converting and cross-referencing scores across 4 methods: high school GPA, national exam (THPTQG), aptitude tests (DGNL/TSA), with percentile tables and real-time auto-calculation. Contains a single-page React app with score computation engine and percentile lookup tables. Used by high school students and parents comparing admission chances. Built with React, Vite, Tailwind CSS.",
-	"private": true,
 	"priority": 7
 }

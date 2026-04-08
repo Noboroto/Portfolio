@@ -20,12 +20,12 @@
 	"updatedAt": "2024-01-10T09:26:43Z",
 	"createdAt": "2024-01-18T06:46:48Z",
 	"isFork": false,
+	"private": true,
 	"visible": false,
 	"tier": "core",
 	"domain": [
 		"mobile"
 	],
 	"displayName": "Xpense Note",
-	"displayDescription": "X-Pense Note — cross-platform expense tracking mobile app for an Introduction to Software Engineering course. Helps students and young professionals manage daily spending with minimal friction. Contains a Flutter/Dart app supporting Android and iOS with local data management and Figma-driven UI. University group project.",
-	"private": true
+	"displayDescription": "X-Pense Note — cross-platform expense tracking mobile app for an Introduction to Software Engineering course. Helps students and young professionals manage daily spending with minimal friction. Contains a Flutter/Dart app supporting Android and iOS with local data management and Figma-driven UI. University group project."
 }

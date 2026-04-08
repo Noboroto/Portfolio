@@ -2,9 +2,10 @@
 interface Props {
   domains: string[];
   languages: string[];
+  topics?: string[];
 }
 
-const { domains, languages } = Astro.props;
+const { domains, languages, topics = [] } = Astro.props;
 ---
 
 <div class="mb-8 space-y-4" id="filter-bar">
@@ -56,6 +57,23 @@ const { domains, languages } = Astro.props;
         ))
       }
     </div>
+
+    {topics.length > 0 && (
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="text-xs text-slate-400 w-full text-center sm:w-auto">Topics:</span>
+        {
+          topics.map((t) => (
+            <button
+              class="filter-btn px-3 py-1 text-xs rounded-full border border-slate-300 dark:border-slate-600 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-colors"
+              data-filter-type="topic"
+              data-filter-value={t}
+            >
+              {t}
+            </button>
+          ))
+        }
+      </div>
+    )}
 
     <div class="flex flex-wrap items-center justify-center gap-2">
       <span class="text-xs text-slate-400 w-full text-center sm:w-auto">Languages:</span>

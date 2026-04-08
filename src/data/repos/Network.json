@@ -18,11 +18,11 @@
 	"updatedAt": "2020-07-01T09:55:23Z",
 	"createdAt": "2022-10-07T16:18:54Z",
 	"isFork": false,
+	"private": true,
 	"visible": true,
 	"tier": "specialized",
 	"domain": [
 		"desktop-app"
 	],
-	"displayDescription": "UDP client-server socket programming implementation in C# demonstrating basic network communication with text message exchange. Hands-on coursework for students learning computer networking fundamentals on Windows. Built with C#, .NET.",
-	"private": true
+	"displayDescription": "UDP client-server socket programming implementation in C# demonstrating basic network communication with text message exchange. Hands-on coursework for students learning computer networking fundamentals on Windows. Built with C#, .NET."
 }

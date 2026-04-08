@@ -16,6 +16,7 @@
 	"updatedAt": "2021-09-13T13:19:42Z",
 	"createdAt": "2022-01-14T12:18:53Z",
 	"isFork": false,
+	"private": false,
 	"visible": false,
 	"tier": "core",
 	"domain": [
