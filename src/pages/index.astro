@@ -18,7 +18,7 @@ const learningRepos = getLearningRepos();
 const dockerizedCount = getAllRepos().filter(r => r.topics.includes('docker')).length;
 ---
 
-<BaseLayout title="Thanh Tu Vo | Portfolio">
+<BaseLayout title="Tu Vo-Thanh | Portfolio">
   <Navbar />
   <Hero />
   <About totalRepos={visibleRepos.length} languages={languages} dockerizedCount={dockerizedCount} />

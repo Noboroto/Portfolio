@@ -1,29 +1,35 @@
 {
-  "name": "Thanh Tu Vo",
-  "tagline": "Software Developer | ML Enthusiast | Open Source Contributor",
-  "bio": "CS student passionate about building practical software solutions. Experience spanning web development, machine learning, desktop applications, and competitive programming.",
-  "email": "thanhtuvo135@gmail.com",
-  "github": "https://github.com/Noboroto",
-  "linkedin": "https://www.linkedin.com/in/thanhtuvo135/",
-  "facebook": "https://www.facebook.com/thanhtuvo135",
-  "resumeUrl": "/cv-thanhtuvo.pdf",
-  "avatarUrl": "https://github.com/Noboroto.png",
-  "education": [
-    {
-      "institution": "VNUHCM - University of Science",
-      "degree": "Bachelor's degree",
-      "field": "Computer Vision Major, High-Quality Program in Information Technology",
-      "startDate": "Aug 2021",
-      "endDate": "Jun 2026",
-      "skills": ["Critical Thinking", "Debugging"]
-    },
-    {
-      "institution": "Hung Vuong High School For The Gifted - Binh Duong",
-      "degree": "High School Diploma",
-      "field": "Specialized Informatics Class",
-      "startDate": "2018",
-      "endDate": "2021",
-      "skills": ["Critical Thinking", "Debugging"]
-    }
-  ]
+	"name": "Tu Vo-Thanh",
+	"tagline": "Software Developer | ML Enthusiast | Open Source Contributor",
+	"bio": "CS student passionate about building practical software solutions. Experience spanning web development, machine learning, desktop applications, and competitive programming.",
+	"email": "thanhtuvo135@gmail.com",
+	"github": "https://github.com/Noboroto",
+	"linkedin": "https://www.linkedin.com/in/thanhtuvo135/",
+	"facebook": "https://www.facebook.com/thanhtuvo135",
+	"resumeUrl": "/cv-thanhtuvo.pdf",
+	"avatarUrl": "https://github.com/Noboroto.png",
+	"education": [
+		{
+			"institution": "VNUHCM - University of Science",
+			"degree": "Bachelor's degree",
+			"field": "Computer Vision Major, High-Quality Program in Information Technology",
+			"startDate": "Aug 2021",
+			"endDate": "Jun 2026",
+			"skills": [
+				"Critical Thinking",
+				"Debugging"
+			]
+		},
+		{
+			"institution": "Hung Vuong High School For The Gifted - Binh Duong",
+			"degree": "High School Diploma",
+			"field": "Specialized Informatics Class",
+			"startDate": "2018",
+			"endDate": "2021",
+			"skills": [
+				"Critical Thinking",
+				"Debugging"
+			]
+		}
+	]
 }
