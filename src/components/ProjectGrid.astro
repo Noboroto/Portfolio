@@ -95,11 +95,20 @@ const allRepos = [
       if (sortBy === 'stars') return Number(b.dataset.stars) - Number(a.dataset.stars);
       if (sortBy === 'updated')
         return (b.dataset.updated || '').localeCompare(a.dataset.updated || '');
+      if (sortBy === 'created')
+        return (b.dataset.created || '').localeCompare(a.dataset.created || '');
       if (sortBy === 'name') return (a.dataset.name || '').localeCompare(b.dataset.name || '');
       return 0;
     });
 
     cards.forEach((card) => projectGrid.appendChild(card));
+
+    // Update year display based on sort mode
+    const yearKey = sortBy === 'created' ? 'createdYear' : 'updatedYear';
+    document.querySelectorAll('.year-display').forEach((el) => {
+      const span = el as HTMLElement;
+      span.textContent = span.dataset[yearKey] || '';
+    });
   }
 
   searchInput?.addEventListener('input', applyFilters);

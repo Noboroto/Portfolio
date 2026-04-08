@@ -33,6 +33,7 @@ const langColors: Record<string, string> = {
 
 const repoLangs = getRepoLanguages(repo);
 const updatedYear = new Date(repo.updatedAt).getFullYear();
+const createdYear = new Date(repo.createdAt).getFullYear();
 ---
 
 <article
@@ -45,6 +46,9 @@ const updatedYear = new Date(repo.updatedAt).getFullYear();
   data-topics={repo.topics.join(',')}
   data-stars={repo.stars}
   data-updated={repo.updatedAt}
+  data-created={repo.createdAt}
+  data-updated-year={updatedYear}
+  data-created-year={createdYear}
 >
   <div class="flex items-center justify-between mb-3">
     <div class="flex items-center gap-2 flex-wrap">
@@ -103,7 +107,7 @@ const updatedYear = new Date(repo.updatedAt).getFullYear();
   }
 
   <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700">
-    <span class="text-xs text-slate-400">{updatedYear}</span>
+    <span class="text-xs text-slate-400 year-display" data-updated-year={updatedYear} data-created-year={createdYear}>{updatedYear}</span>
     {!repo.private && (
       <a
         href={repo.url}
